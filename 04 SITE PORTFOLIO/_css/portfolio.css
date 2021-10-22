@@ -1,0 +1,132 @@
+/* content PROJECTS*/
+
+body {
+    font-family: sans-serif;
+}
+
+.content {
+    width: 100%;
+    min-height: calc(100% - 150px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content h1 {
+    width: 98%;
+    font-size: 2.5rem;
+    margin: 2.2%;
+    text-align: center;
+}
+
+.content_project {
+    width: 45%;
+    position: relative;
+    margin: 0px auto 2% auto;
+    border: 6px solid #000;
+    align-content: center;
+}
+
+.content_project img {
+    width: 100%;
+    object-fit:fill;
+}
+
+.content_text {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0, 1);     
+    border-top: 2px solid rgb(0, 0, 0);
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.h3_project_name {
+    display: none;
+}
+
+.content_text h3 {
+    font-size: 1.5rem;
+    margin: 1% 0% 1% 1%;
+    color: white;
+}
+
+.content_text p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: justify;
+    text-indent: 2rem;
+    margin: 0% 2%;
+    color: white;
+    display: none;
+}
+
+/*
+COMANDO HOVER DESATIVADO, POIS NÃO ESTÁ FICANDO SÍNCRONO COM A FUNÇÃO CLICK PARA MOBILE
+.content_text:hover {
+    top: 0px;
+    background-color: rgb(0, 0, 0, 0.95);
+}
+
+.content_text:hover p {
+    display: block;
+}
+
+
+.content_text:hover .h3_project {
+    display: none;
+}
+
+.content_text:hover .h3_project_name {
+    display: block;
+}
+*/
+
+
+
+
+
+/*  RESPONSIVIDADE */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content_text h3 {
+        font-size: 1rem;
+    }
+
+    .content_text p {
+        font-size: 0.75rem;
+        line-height: 0.85rem;
+        text-indent: 2rem;
+    }
+}
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    .content_project {
+        width: 90%;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content_text h3 {
+        font-size: 0.8rem;
+    }
+
+    .content_text p {
+        font-size: 0.6rem;
+        line-height: 0.7rem;
+        text-indent: 2rem;
+    }
+}

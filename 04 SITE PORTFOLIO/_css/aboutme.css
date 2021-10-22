@@ -1,0 +1,112 @@
+body {
+    background: white;
+}  
+
+/* MAIN */
+.content {
+    width: 98%;
+    min-height: calc(100vh - 200px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#content_left {
+    width: 60%;
+    margin: auto;
+}
+
+#content_left p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-indent: 2rem;
+    margin: 2%;
+}
+
+#content_right {
+    width: 35%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
+    text-align: center;
+}
+
+#content_right img {
+    height: 400px;
+    border: 3px solid #000;
+}
+
+#content_bottom {
+    margin: 2% auto;
+    width: 90%;
+    background-color:rgb(232,232,232);
+    border:1px dotted #333333;
+}
+
+#content_bottom h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.frontEnd, .backEnd, .tools, .interests {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frontEndColor {
+    background-color: #f7e017;
+}
+
+.backEndColor {
+    background-color: aqua;
+}
+
+.toolsColor {
+    background-color: #fb7b1f;
+}
+
+.interestsColor {
+    background-color: white;
+}
+
+.apps {
+    width: 22%;
+    height: 100px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+}
+
+.html {
+    text-align: center;
+}
+
+.apps h6 {
+    font-size: 0.9rem;
+    margin: 4%;
+}
+
+.apps img {
+    max-height: 50%;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    #content_left, #content_right {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .apps {
+        width: 30%;
+    }
+
+}

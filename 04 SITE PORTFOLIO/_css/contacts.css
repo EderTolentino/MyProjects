@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    width:100%;
+    min-height: calc(100% - 200px);
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content div#content_top {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    align-content: left;
+    padding-left: 30px;
+}            
+
+#content div#content_top h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-family: roboto, sans-serif;
+    margin-top: 1%;
+}
+
+/* Starts contact style */
+#content div#content_left {
+    width: 45%;
+    margin: 2.5% auto;
+}
+
+#content div#content_left p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    text-align: justify;
+    margin: 3%;
+}
+
+#content div#content_left span {
+    margin: 1% 2%;
+}
+/* Ends contact style */
+
+
+/* Starts form style */
+#content div#content_right {
+    width: 45%;
+    margin: 2.5% auto;
+    background-color: orange;
+}
+
+#content div#content_right form {
+    width: 100%;
+    margin:10px auto;
+}
+
+#content div#content_right form h2  {
+    font-family: sans-serif;
+    color:#9A9668;
+}
+
+#content div#content_right form p {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background: #12e896;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#content div#content_right form label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 5px 3px;
+}
+
+#content div#content_right form input[type="text"] {
+    width: 80%;
+    padding:10px;
+    border:1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 0 25px 5px;
+}
+
+#content div#content_right form input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 0 25px 5px;
+}
+
+#content div#content_right textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #CDC99B;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 0 25px 5px;
+}     
+
+#content div#content_right form input[type="submit"] {
+    display: block;
+    padding:10px 20px;
+    margin: 15px 0 0 5px;
+    color: #FFF;
+    border:0;
+    border-radius: 5px;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    #content div#content_left, #content div#content_right {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+}
+
+
+/* Ends form style */

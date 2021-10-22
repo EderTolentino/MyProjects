@@ -1,0 +1,143 @@
+/* FOOTER */            
+footer {
+    width: calc(100% - 20px);
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+#footer_left {
+    width: 35%;
+}
+
+#footer_center {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer_center p {
+    margin-left: 2%;
+}
+
+
+/* MEDIA */
+#footer_right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.fafooter {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fafooter:hover {
+    opacity: 0.7;
+}
+
+.fa-whatsapp {
+    background-color: #34af23;
+    color: white;
+}   
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #000;
+    color: white;
+    margin-right: 50px;
+}
+
+
+
+/* BUTTON TO TOP */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 45px;
+    background-color: #000;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.btn::after {
+    content: "↑";
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    .fafooter {
+        padding: 7px;
+    }
+
+    .btn {
+        width: 25px;
+        height: 35px;
+    }
+
+    .btn::after {
+        font-size: 1.5rem;
+    }
+
+    #footer_center p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    #footer_left {
+        width: 22%;
+    }
+
+    #footer_center {
+        width: 38%;
+    }
+
+    #footer_right {
+        width: 40%;
+    }
+
+    .fafooter {
+        padding: 4.5px;
+    }
+
+    #footer_center p {
+        font-size: 0.8rem;
+    }
+
+}

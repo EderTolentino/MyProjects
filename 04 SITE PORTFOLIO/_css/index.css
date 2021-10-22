@@ -1,0 +1,87 @@
+/* MAIN */
+.main {
+    width: 98%;
+    min-height: calc(100vh - 200px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#presentation {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#presentation #p1_home, #presentation #p4_home {
+    font-family: serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1%;
+}
+
+#presentation #p2_home, #presentation #p3_home {
+    font-family: cursive;
+    font-size: 3.3rem;
+    line-height: 3.8rem;
+    margin: 10px;
+    text-align: center;
+}
+
+#photo {
+    width: 35%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
+    text-align: center;
+}
+
+#photo img {
+    height: 400px;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    #presentation {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    #photo {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    #presentation #p1_home, #presentation #p4_home {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    #presentation #p2_home, #presentation #p3_home {
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+    }
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    #presentation #p1_home, #presentation #p4_home {
+        font-size: 0.6rem;
+        line-height: 1.1rem;
+    }
+
+    #presentation #p2_home, #presentation #p3_home {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+    }
+
+}
