@@ -108,7 +108,7 @@
                         <td class="col-3">
                             <input type="text" class="inputEntrada" id="entradaIngles" placeholder="Traduza para o inglês">
                         </td>
-                        <td class="col-4" id="respostaIngles"></td>
+                        <td class="col-4" id="respostaIngles"><div></div></td>
                         
                     </tr>
                     <tr>
