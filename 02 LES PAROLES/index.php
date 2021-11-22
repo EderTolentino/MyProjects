@@ -11,118 +11,110 @@
        
     </head>
     <body> 
-        <div id="container_header">
-            <div class="container" id="container_header_left"><img id="img_left" src="img/img_left.jpg" alt="Foto bonita"></div>  
-            <div id="container_header_center"><div class="title"><h1>Les paroles</h1></div>  </div>
-
-            <div class="container" id="container_header_right"><img src="img/img_right.jpg" alt="Foto bonita"></div>  
+        <div id="container_header">            
+            <div id="container_header_center"><div class="title"><h1>LES PAROLES</h1></div>  </div>  
         </div>
+        <div id="container">
+            <div id="containerLabel">
+                <label for="selection" id="labelselection">Choisissez une chanson:</label>
+            </div>
+            <div id="container_selection">
 
-        <div id="containerLabel">
-            <label for="selection" id="labelselection">Choisissez une chanson:</label>
-        </div>
-        <div id="container_selection">
-
-            <select id="selection">
-                <option value="">Musiques disponibles...</option>
-                <optgroup label="Vitaa et Slimane">
-                    <option value="1.1">A fleur de toi</option>
-                    <option value="1.2">Avant toi</option>
-                    <option value="1.3">Je te le donne</option>
-                    <option value="1.4">De l'or</option>                        
-                </optgroup>
-                <optgroup label="Stromae">
-                    <option value="2.1">Alors on danse</option>
-                </optgroup>
-                <optgroup label="ZAZ">
-                    <option value="3.1">Je veux</option>
-                </optgroup>
-                <optgroup label="Guillaume Grand">
-                    <option value="4.1">Toi et moi</option>
-                </optgroup>
-                <optgroup label="Dua Lipa">
-                    <option value="5.1">Physical</option>
-                </optgroup>
-                <optgroup label="Shakira">
-                    <option value="6.1">Perro fiel</option>
-                </optgroup>
-                <optgroup label="Daddy Yanky">
-                    <option value="7.1">Con calma</option>
-                </optgroup>
-                <optgroup label="Julio Iglesias">
-                    <option value="8.1">Je n'ai pas changé</option>
-                </optgroup>
-                <optgroup label="Coldplay">
-                    <option value="9.1">Viva la vida</option>
-                </optgroup>
-                <optgroup label="One Republic">
-                    <option value="10.1">If I lose myself</option>
-                </optgroup>
-                <optgroup label="Grégoir">
-                    <option value="11.1">Toi plus moi</option>
-                </optgroup>
-                <optgroup label="Tom Jobin">
-                    <option value="12.1">Garota de Ipanema</option>
-                </optgroup>
-                <optgroup label="Magic System">
-                    <option value="13.1">Tu es fou</option>
-                </optgroup>
-                <optgroup label="Carrapicho">
-                    <option value="14.1">Tic tic tac</option>
-                </optgroup>
-            </select>
-            <button  onclick="chooseMusic()" id="btnselection">SÉLECTIONNER</button>
-        </div>
-
-
-        <div id="inicialMessage">
-
-            <p>“La chanson n'est pas une fille indigne de la littérature. On dit souvent plus dans une chanson de trois minutes que dans un roman de cinq cents pages.” <br> <br> Pierre Perret</p>    
-        </div>
-
-
-
-
-
-        <div id="inicial"></div>
-
-        <div class="video" id="originalVideo">
-            <!-- COLOCADO VIA JAVASCRIPT -->
-        </div>
-
-        <div class="lineFlags">
-            <div id="originalFlag">
-                <button onclick="loadOriginal()" id="btnORIGINAL"></button>
+                <select id="selection">
+                    <option value="">Musiques disponibles...</option>
+                    <optgroup label="Vitaa et Slimane">
+                        <option value="1.1">A fleur de toi</option>
+                        <option value="1.2">Avant toi</option>
+                        <option value="1.3">Je te le donne</option>
+                        <option value="1.4">De l'or</option>                        
+                    </optgroup>
+                    <optgroup label="Stromae">
+                        <option value="2.1">Alors on danse</option>
+                    </optgroup>
+                    <optgroup label="ZAZ">
+                        <option value="3.1">Je veux</option>
+                    </optgroup>
+                    <optgroup label="Guillaume Grand">
+                        <option value="4.1">Toi et moi</option>
+                    </optgroup>
+                    <optgroup label="Dua Lipa">
+                        <option value="5.1">Physical</option>
+                    </optgroup>
+                    <optgroup label="Shakira">
+                        <option value="6.1">Perro fiel</option>
+                    </optgroup>
+                    <optgroup label="Daddy Yanky">
+                        <option value="7.1">Con calma</option>
+                    </optgroup>
+                    <optgroup label="Julio Iglesias">
+                        <option value="8.1">Je n'ai pas changé</option>
+                    </optgroup>
+                    <optgroup label="Coldplay">
+                        <option value="9.1">Viva la vida</option>
+                    </optgroup>
+                    <optgroup label="One Republic">
+                        <option value="10.1">If I lose myself</option>
+                    </optgroup>
+                    <optgroup label="Grégoir">
+                        <option value="11.1">Toi plus moi</option>
+                    </optgroup>
+                    <optgroup label="Tom Jobin">
+                        <option value="12.1">Garota de Ipanema</option>
+                    </optgroup>
+                    <optgroup label="Magic System">
+                        <option value="13.1">Tu es fou</option>
+                    </optgroup>
+                    <optgroup label="Carrapicho">
+                        <option value="14.1">Tic tic tac</option>
+                    </optgroup>
+                </select>
+                <button  onclick="chooseMusic()" id="btnselection">SÉLECTIONNER</button>
             </div>
 
-            <div id="TR_Flags">
-                <button onclick="translatePORTUGUESE()" id="btnPORTUGUESE"><img src="img/PORTUGUESE.jpg"></button>
-                <button onclick="translateFRENCH()" id="btnFRENCH"><img src="img/FRENCH.jpg"></button>
-                <button onclick="translateSPANISH()" id="btnSPANISH"><img src="img/SPANISH.jpg"></button>
-                <button onclick="translateENGLISH()" id="btnENGLISH"><img src="img/ENGLISH.jpg"></button>
+            <div id="inicialMessage">
+
+                <p>“La chanson n'est pas une fille indigne de la littérature. On dit souvent plus dans une chanson de trois minutes que dans un roman de cinq cents pages.” <br> <br> Pierre Perret</p>    
+            </div>
+            
+            <div id="inicial"></div>
+
+            <div class="video" id="originalVideo">
+                <!-- COLOCADO VIA JAVASCRIPT -->
             </div>
 
-        </div>
+            <div class="lineFlags">
+                <div id="originalFlag">
+                    <button onclick="loadOriginal()" id="btnORIGINAL"></button>
+                </div>
 
-        <div class="lineMusic">
-            <div id="music_original">                    
-                <h1 id="title_original"></h1>
-                <h3 id="singer"></h3>
-                <div id="lyric_original"></div>
-                <!-- LETRA EM FRANCÊS -->
-
-            </div>
-            <div id="music_TR" >                    
-                <h1 id="title_translated"></h1>
-                <h3 id="singer_TR"></h3>
-                <div id="lyric_TR"></div>
-                <!-- LETRA TRADUZIDA -->
+                <div id="TR_Flags">
+                    <button onclick="translatePORTUGUESE()" id="btnPORTUGUESE"><img src="img/PORTUGUESE.jpg"></button>
+                    <button onclick="translateFRENCH()" id="btnFRENCH"><img src="img/FRENCH.jpg"></button>
+                    <button onclick="translateSPANISH()" id="btnSPANISH"><img src="img/SPANISH.jpg"></button>
+                    <button onclick="translateENGLISH()" id="btnENGLISH"><img src="img/ENGLISH.jpg"></button>
+                </div>
 
             </div>
-        </div>
+
+            <div class="lineMusic">
+                <div id="music_original">                    
+                    <h1 id="title_original"></h1>
+                    <h3 id="singer"></h3>
+                    <div id="lyric_original"></div>
+                    <!-- LETRA EM FRANCÊS -->
+
+                </div>
+                <div id="music_TR" >                    
+                    <h1 id="title_translated"></h1>
+                    <h3 id="singer_TR"></h3>
+                    <div id="lyric_TR"></div>
+                    <!-- LETRA TRADUZIDA -->
+
+                </div>
+            </div>
+        </div>     
         
-        
-        <div class="footer">
+        <div class="footer" id="footer">
             <div id="footer_left">
                 <h3>EDER TOLENTINO </h3>
                 <p>Développeur Web Jr</p>

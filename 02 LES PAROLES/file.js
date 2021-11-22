@@ -6,9 +6,12 @@ var cod;
 function chooseMusic() {
 
     var $select = document.getElementById('selection');
+    var $footer = document.getElementById('footer');
     cod = $select.options[$select.selectedIndex].value;
 
     loadData(cod);
+    
+    $footer.style.position = "relative";
 }
 
 
@@ -73,6 +76,8 @@ function loadData(n) {
                 document.getElementById('singer').innerHTML = $value.SINGER;
                 document.getElementById('lyric_original').innerHTML = $value[original]; 
 
+                // CHANGING THE BACKGROUND COLOR FOR EACH SONG - NOT IN USE
+                /*
                 document.body.style.backgroundColor = $value.COLOR;
                 document.getElementById('container_header_center').style.background = "linear-gradient(to right, white," + $value.COLOR + ")";
                 document.getElementById('container_header_right').style.backgroundColor = $value.COLOR;
@@ -83,7 +88,7 @@ function loadData(n) {
                 document.getElementById('btnENGLISH').style.backgroundColor = $value.COLOR;
                 document.getElementById('music_original').style.backgroundColor = "white";
                 document.getElementById('music_TR').style.backgroundColor = "white";
-
+                */
             }
         });
     });
