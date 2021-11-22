@@ -1331,7 +1331,7 @@ function conjugateSPR(verb) {
 
 function conjugateSPA(verb) {
     
-    let arr_avoir = ['aie', 'ais', 'ait', 'ayons', 'ayez', 'aient'];
+    let arr_avoir = ['aie', 'aies', 'ait', 'ayons', 'ayez', 'aient'];
     let arr_etre = ['sois', 'sois', 'soit', 'soyons', 'soyez', 'soient'];
     
     conjugateTenseComposed('SPA', verb, arr_avoir, arr_etre); 

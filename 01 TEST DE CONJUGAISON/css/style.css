@@ -6,7 +6,6 @@ html body {
 
 /* TOPO */
 .container_top {
-    background-color: white;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
@@ -26,22 +25,21 @@ html body {
     width: 60%;
     margin: auto;                
     text-align: center;
-    background-color: white;
 }
 
 .title h1 {
     font-style: oblique;
     font-size: 2rem;
-    color: rgb(70, 142, 236);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    background-color: white;
 }
 
 /* CONTAINER DE SELEÇÃO DO VERBO */
 #verb {
-    width: 25%;
+    width: 30%;
+    height: 30px;
     margin-right: 2%;
 }
 
@@ -57,6 +55,7 @@ html body {
 
 #btn_Conj {
     width: 15%;
+    height: 25px;
     font-size: 0.8rem;
     text-align: center;
     border-radius: 5px;
@@ -133,6 +132,13 @@ table td {
 .col-4 {
     width: 25%;
     text-align: center;
+}
+
+.col-4 div {
+    width: 25px;
+    border-radius: 25px;
+    background-color: yellow;
+    margin: auto;
 }
 
  input {
@@ -233,13 +239,6 @@ table td {
     flex-direction: column;
     justify-content: center;
     text-align: right;
-}
-
-#footer_bottom {
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to bottom, white, rgb(70, 142, 236));
-
 }
 
 
